@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <title>订阅账单管家 - 技术支持</title>
+  <style>
+    :root { color-scheme:light dark; --bg:#fff; --surface:#fafafa; --text:#171717; --muted:#666; --line:rgba(0,0,0,.1); --accent:#315f8c; }
+    @media (prefers-color-scheme:dark) { :root { --bg:#000; --surface:#1a1a1a; --text:#ededed; --muted:#a0a0a0; --line:rgba(255,255,255,.13); --accent:#78a5cf; } }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif; line-height:1.65; }
+    main { max-width:720px; margin:0 auto; padding:64px 24px 80px; }
+    h1 { margin:0 0 6px; font-size:34px; letter-spacing:-1px; }
+    .subtitle { margin:0 0 36px; color:var(--muted); }
+    .card { margin-bottom:18px; padding:24px; background:var(--surface); border:1px solid var(--line); border-radius:14px; }
+    h2 { margin:0 0 12px; font-size:19px; }
+    .item { padding:16px 0; border-top:1px solid var(--line); }
+    .item:first-of-type { border-top:0; padding-top:4px; }
+    .q { margin:0 0 6px; font-size:15px; font-weight:600; }
+    .a, p { margin:0; color:var(--muted); font-size:15px; }
+    .button { display:inline-block; margin-top:18px; padding:11px 16px; color:#fff; background:var(--accent); text-decoration:none; border-radius:8px; font-weight:600; }
+    footer { margin-top:36px; color:var(--muted); font-size:13px; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>订阅账单管家</h1>
+  <p class="subtitle">技术支持与常见问题</p>
+
+  <div class="card">
+    <h2>常见问题</h2>
+    <div class="item"><p class="q">如何建立房租的层级分类？</p><p class="a">新增账单时选择“房租”大类，并在细分类中填写“主卧 · 合租”“次卧”或“整租”等名称。相关账单会自动归入对应分类并以树状结构展示。</p></div>
+    <div class="item"><p class="q">如何设置 AA 分摊？</p><p class="a">在新增或编辑账单页面开启“AA 分摊”，添加参与成员并填写金额，也可以使用“平均分摊”自动计算。账单卡片默认折叠，点击分摊入口即可查看成员明细。</p></div>
+    <div class="item"><p class="q">收入、支出和结余如何计算？</p><p class="a">应用会根据账单类型和重复周期汇总每月及每年的收入与支出。收入减去支出为结余，结果为负数时显示赤字。</p></div>
+    <div class="item"><p class="q">为什么没有收到提醒？</p><p class="a">请在应用“设置”中开启到期通知，并确认系统设置允许“订阅账单管家”发送通知。系统的专注模式或通知摘要也可能影响提醒出现时间。</p></div>
+    <div class="item"><p class="q">如何删除账单？</p><p class="a">在账单卡片上向左滑动，点击或继续滑动触发删除，并在确认窗口中选择“删除”。账单对应的 AA 分摊明细会一并删除。</p></div>
+    <div class="item"><p class="q">数据保存在哪里？</p><p class="a">账单和设置仅保存在当前设备的应用沙盒中。卸载应用或更换 Bundle ID 可能导致原数据无法继续访问，请在操作前确认重要信息已妥善记录。</p></div>
+  </div>
+
+  <div class="card">
+    <h2>联系我们</h2>
+    <p>如果问题仍未解决，请在邮件中说明设备型号、系统版本、应用版本和复现步骤。我们通常会在 48 小时内回复。</p>
+    <a class="button" href="mailto:yvinus@qq.com?subject=订阅账单管家技术支持">发送支持邮件</a>
+  </div>
+
+  <div class="card">
+    <h2>隐私政策</h2>
+    <p>查看订阅账单管家的数据处理与隐私说明。</p>
+    <a class="button" href="privacy.html">查看隐私政策</a>
+  </div>
+
+  <footer>订阅账单管家 v1.0 · © 2026</footer>
+</main>
+</body>
+</html>
